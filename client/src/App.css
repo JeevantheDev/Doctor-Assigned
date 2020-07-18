@@ -1,0 +1,884 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Libre+Franklin:wght@600&family=Noto+Serif:ital,wght@1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #d5f5f8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpath fill='%23d9f7f8' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23def9f9' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23e2fbf9' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23e7fdfa' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%23ebfffa' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23effff9' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23f3fff8' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23f7fef7' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23fbfef6' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23fffef5' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* Utility Classes */
+
+.fee {
+    color: #f4f4f4;
+    font-size: 1.2rem;
+}
+h5 {
+    margin-bottom: 1.5rem;
+}
+.desc-p {
+    padding: 1rem;
+    height: 20rem;
+}
+.mar-1 {
+    margin: 1rem 0;
+}
+.main-heading {
+    font-family: 'Noto Serif', serif;
+    color: #738f93;
+}
+.main-span {
+    color: #17a2b8;
+    text-decoration: underline;
+}
+.heading-sub {
+    color: #17a2b8;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.description {
+    padding: 2rem 2rem;
+    border: 1px solid #17a2b8;
+    border-radius: .25rem;
+}
+.special {
+    background: #17a2b8;
+    color: #fff;
+}
+.logo {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    padding:0 .315rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    line-height: inherit;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 1px 5px 10px #333333;
+}
+.main .container .logo:hover {
+    color: #17a2b8;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: 0.5s ease;
+}
+.heading-common h1 {
+    color: #17a2b8;
+    font-family: 'Marmelad', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: left;
+    margin: 2rem 0;
+}
+.credentials {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #333;
+}
+.label {
+    color: #738f93;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.5rem;
+}
+.welcome-heading {
+    text-align: left;
+    font-size: 2rem;
+    color: #535050;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.special-btn {
+    border: 2px solid #17a2b8;
+    color: #738f93;
+}
+.profile-btn {
+    margin: 1rem 0;
+    width: 25vh;
+}
+.profile-heading {
+    font-size: 2rem;
+    color: #17a2b8;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.style-heading {
+    font-size: 2rem;
+    color: #17a2b8;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.profile-top-heading {
+    font-size: 3rem;
+    font-family: 'Marmelad', sans-serif;
+    color: #f4f4f4;
+    text-shadow: 1px 5px 10px #333333;
+}
+.profile-top-desc {
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-family: 'Marmelad', sans-serif;
+    color: #f4f4f4;
+}
+.logos { 
+    color: #fff;
+    margin-top: 2rem;
+}
+.round-img {
+    border-radius: 50%;
+}
+.profile-top-p {
+    font-size: 1.3rem;
+    color: #f4f4f4;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.profile-p {
+    color: #738f93;
+    font-family: 'Prata', serif;
+}
+.profile-p2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.heading-bio {
+    text-align: center;
+    color: #17a2b8;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.bio-p {
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.appointment-p {
+    padding: 1rem;
+}
+.top-img {
+    margin: 2rem auto;
+}
+.lead {
+    font-size: 1rem;
+    color: #738f93;
+}
+
+/* Navbar */
+.main {
+    font-family: 'IBM Plex Sans', sans-serif;
+    opacity: 0.9;
+}
+.nav-item {
+    margin-right: .5rem;
+}
+.logos {
+    display: flex;
+    justify-content: center;
+}
+.nav-logo {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Marmelad', sans-serif;
+    font-size: 1.85rem;
+    color: #d5f5f8;
+}
+.nav-logo:hover {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.logo:hover {
+    color: #738f93;
+}
+.navbar-dark .navbar-nav .active>.nav-link {
+    font-size: 1.1rem;
+}
+.navbar-dark .navbar-nav .active>.nav-link:hover {
+    color: #17a2b8;
+}
+.nav-log-img:hover {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    bottom: 1px;
+}
+/* Landing */
+#landing .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "heading    img"
+    "signup     img";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.heading {
+    grid-area: heading;
+    height: 35vh;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: .50rem;
+}
+.signup {
+    grid-area: signup; 
+    height: 300px;   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "doctor user";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.doctor-signup {
+    grid-area: doctor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.user-signup {
+    grid-area: user;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.img {
+    /* background-color: lightgreen; */
+    grid-area: img;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "pic1";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.img-1{
+    grid-area: pic1;
+    align-self: center;
+    width: 100%;
+}
+.img-1 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Login Page */
+/* Login Page and register page */
+
+.common-form {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "form-side    img-side"
+    "form-side     img-side";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.form-side {
+    grid-area: form-side;
+    align-self: center;
+}
+.form-side .heading-common {
+    align-self: baseline;
+}
+.img-side {
+    grid-area: img-side;
+    align-self: center;
+}
+.register-user {
+    width: 80vh;
+}
+/* End of login and register page */
+
+.add-edit-btn {
+    display: flex;
+    margin: 1.9rem auto ;
+}
+.add-edit-btn > a {
+    margin-right: 1rem;
+}
+.common-table {
+    width: 50rem;
+    border-radius: 0.25rem;
+}
+.scroll-table {
+    height: 15rem;
+    border: 2px solid #535050;
+    overflow: auto;
+    border-radius: 0.25rem;
+}
+.table {
+    border-radius: 0.5rem;
+}
+
+.table thead tr:nth-child(1) th{
+      position: sticky;
+      top: 0;
+}
+.table th,
+.table td {
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.table th {
+    font-size: 1.25rem;
+    background: #535050;
+    vertical-align: baseline;
+    color: #f4f4f4;
+}
+.review-graph {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "common-details common-details";
+    grid-column-gap: 1rem;
+}
+
+.common-details {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+}
+
+#profiles-page .profiles {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: normal;
+}
+.profile-1 {
+    grid-area: profile-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "profile-img profile-details profile-buttons"
+    ;
+    grid-column-gap: 10px;
+    background-color: lightgray;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    overflow: auto;
+}
+
+.profile-img {
+    grid-area: profile-img;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.profile-img > img {
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+.profile-img  a img{
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+.profile-details {
+    grid-area: profile-details;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+}
+.profile-buttons {
+    grid-area: profile-buttons;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+}
+#profile-page .current-profile {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "current-btn"
+    "top-profile"
+    "bio"
+    "exp-edu"
+    "review";
+    grid-row-gap: 16px;
+}
+.current-btn {
+    grid-area: current-btn;
+}
+.current-btn a {
+    margin-right: 0.5rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.top-profile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #17a2b8;
+    border-radius: 0.25rem;
+    padding: 2rem 2rem;
+}
+.top-profile-img {
+    grid-area: top-profile-img;
+    width: 70vh;
+}
+.details {
+    text-align: left;
+}
+.top-bio {
+    grid-area: bio;
+    background-color: #f4f4f4;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem;
+    box-shadow: 1px 5px 10px #738f93;
+}
+.exp-edu {
+    grid-area: exp-edu;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "exp edu"
+    ;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+}
+.exp-common-heading {
+    color: #17a2b8;
+    font-weight: bold;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin-bottom: 1.5rem;
+}
+.exp-common-details {
+    font-family: 'IBM Plex Sans', sans-serif;   
+}
+.exp-bottom {
+    grid-area: exp;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    border: 1px solid #738f93;
+}
+.edu-bottom {
+    grid-area: edu;
+    background-color: #f4f4f4;
+    padding: 2rem;
+    border: 1px solid #738f93;
+    border-radius: 0.25rem;
+}
+.patient-review {
+    grid-area: review;
+}
+
+.text-area {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.current-review {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "img-user user-review user-review user-review";
+    grid-column-gap: 1rem;
+    border: 2px solid #738f93;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    margin: 1rem auto;
+}
+.img-user {
+    grid-area: img-user;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #17a2b8;
+    font-weight: bold;
+}
+.user-pic {
+    margin-bottom: 1rem;
+    width: 100px;
+}
+.user-review {
+    grid-area: user-review;
+    padding: 1rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.post-date {
+    font-size: 0.9rem;
+    color: #738f93;
+}
+
+.modal-body .profiles .profile-details,
+.modal-body .profiles .profile-buttons{
+    text-align: center;
+}
+
+.modal-body .profiles .profile-1 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: 
+    "profile-img"
+    "profile-details"
+    "profile-buttons"
+    ;
+}
+
+.carousel-item {
+    text-align: center;
+    padding: 5% 15%;
+}
+
+#testimonials {
+    width: auto;
+    text-align: center;
+    background-color: #17a2b8;
+    border-radius: 0.25rem;
+    padding: 2rem 3rem;
+    border: 2px solid #535050;
+}
+.scroll {
+    height: 15rem;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: scroll;
+}
+
+.scroll .card .card-img-top {
+    margin-top: 1rem;
+    align-self: center;
+    width: 100px;
+    border-radius: 50%;
+}
+.scroll .card {
+    width: 10rem;
+    margin-bottom: 2rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.scroll .card em {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #17a2b8;
+    font-weight: bold;
+}
+#graph {
+    width: auto;
+    height: auto;
+    text-align: center;
+    background-color: #333;
+    border-radius: 0.25rem;
+}
+.user-graph {
+    display: flex;
+    flex-direction: column;
+    height: 19.3rem;
+    justify-content: center;
+    border: 2px solid #17a2b8;
+    border-radius: 0.25rem;
+}
+
+.appointment-doctor {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.2rem 0;
+}
+.appointment-img {
+    width: 5rem;
+    margin-right: 1rem;
+}
+.appointment-doctor p {
+    align-self: center;
+    font-weight: 500;
+}
+
+/* Tablets */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1)  {
+    .appointment-p {
+        text-align: center;
+    }
+    .welcome-heading {
+        font-size: 1.5rem;
+    }
+    .common-table {
+        width: auto;
+    }
+    #landing .container {
+        grid-template-areas: 
+        "heading   heading"
+        "img        img"
+        "signup     signup";
+    }
+    #profiles-page .profiles {
+        text-align: center;
+        justify-content: normal;
+    }
+    .profile-1 {
+        width: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+       "profile-img"
+       "profile-details"
+       "profile-buttons"
+        ;
+        grid-column-gap: 0px;
+        margin-bottom: 1rem;
+    }
+    .profile-2 {
+        width: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+       "profile-img"
+       "profile-details"
+       "profile-buttons"
+        ;
+        grid-column-gap: 0px;
+        margin-bottom: 1rem;
+    }
+    .review-graph {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "common-details" "common-details" 
+        "common-details ";
+        grid-row-gap: 1rem;
+    }
+    .profile-desc {
+        text-align: center;
+        padding: 2rem;
+    }
+    .desc-p {
+        text-align: center;
+    }
+    .desc-p .profile-btn {
+        align-self: center;
+    }
+    .heading-common h1 {
+        font-size: 3rem;
+    }
+    .common-form {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "img-side"
+        "img-side"
+        "form-side"
+        "form-side";
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .register-user {
+        width: 40vh;
+    }
+    .top-profile {
+        flex-direction: column;
+   }
+   .top-profile {
+       flex-direction: column;
+   }
+   .top-profile-img {
+      display: none;
+   }
+
+}
+/* Smart Phones */
+@media(max-width: 575.98px) {
+    .appointment-p {
+        text-align: center;
+    }
+    .welcome-heading {
+        font-size: 1.5rem;
+    }
+    #landing .container {
+        grid-template-areas: 
+        "heading   heading"
+        "img        img"
+        "signup     signup";
+    }
+    .common-table {
+        width: auto;
+    }
+    #profiles-page .profiles {
+        text-align: center;
+        justify-content: normal;
+    }
+    .profile-1 {
+        width: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+       "profile-img"
+       "profile-details"
+       "profile-buttons"
+        ;
+        grid-column-gap: 0px;
+        margin-bottom: 1rem;
+    }
+    .profile-2 {
+        width: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+       "profile-img"
+       "profile-details"
+       "profile-buttons"
+        ;
+        grid-column-gap: 0px;
+        margin-bottom: 1rem;
+    }
+    #profile-page .current-profile {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .exp-edu {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "exp"
+        "edu" ;
+    }
+    .current-review {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "img-user "
+        "user-review";
+    }
+    .review-graph {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "common-details" 
+        "common-details";
+        grid-row-gap: 1rem;
+    }
+    #profile-page .container {
+        display: flex;
+        justify-content: center;
+    }
+    .current-btn {
+        display: flex;
+        justify-content: space-around;
+        height: 10rem;
+        flex-direction: column;
+    }
+    .profile-desc {
+        text-align: center;
+        padding: 1rem;
+    }
+    .desc-p {
+        text-align: center;
+    }
+    .desc-p .profile-btn {
+        align-self: center;
+    }
+    .heading-common h1 {
+        font-size: 3rem;
+    }
+    .common-form {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "img-side"
+        "img-side"
+        "form-side"
+        "form-side";
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .register-user {
+        width: 40vh;
+    }
+    .top-profile {
+        width: 366px;
+        height: auto;
+        flex-direction: column;
+   }
+   .details {
+    text-align: center;
+   }
+   .top-img {
+       text-align: center;
+   }
+   .top-profile-img {
+      display: none;
+   }
+   .current-btn a {
+        margin: 0 1rem;
+    }
+}
+
+/* Smart Phones in Landscape */
+@media(max-height: 500px) {
+    .heading-common h1 {
+        font-size: 3rem;
+    }
+    .appointment-p {
+        text-align: center;
+    }
+    #landing .container {
+        grid-template-areas: 
+        "heading   heading"
+        "img        img"
+        "signup     signup";
+    }
+    .common-table {
+        width: auto;
+    }
+    .profile-btn {
+        font-size: 0.8rem;
+    }
+    .review-graph {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "common-details" "common-details" 
+        "common-details ";
+        grid-row-gap: 1rem;
+    }
+    .profile-desc {
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .desc-p {
+        text-align: center;
+    }
+    .desc-p .profile-btn {
+        align-self: center;
+    }
+    .common-form {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "img-side"
+        "form-side";
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .img-side {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .register-user {
+        width: 100vh;
+        z-index: -1;
+    }
+    .top-profile {
+        flex-direction: column;
+   }
+   .top-profile-img {
+      display: none;
+   }
+}
