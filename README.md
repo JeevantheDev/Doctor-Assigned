@@ -14,3 +14,6 @@ This is a MERN stack application which is based on booking appointment which inc
 ## Run both Express & React from root
 `npm run dev`
 
+#### [Click Here](https://drive.google.com/drive/folders/1BplDurTpvfIIzYjeMv98YfslDRjVdf_e?usp=sharing) for screenshots
+
+
