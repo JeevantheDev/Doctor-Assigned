@@ -2,10 +2,8 @@
 
 # dependencies
 /node_modules
-<<<<<<< HEAD
 
 # misc
-=======
 /.pnp
 .pnp.js
 
@@ -17,16 +15,13 @@
 
 # misc
 .DS_Store
->>>>>>> 7cf9f176a9dcb4c36cfc176edf8d26b90cb39983
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-<<<<<<< HEAD
 
-=======
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
->>>>>>> 7cf9f176a9dcb4c36cfc176edf8d26b90cb39983
+
