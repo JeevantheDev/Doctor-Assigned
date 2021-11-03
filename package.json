@@ -31,7 +31,7 @@
     "react-router-redux": "^4.0.8",
     "redux": "^4.0.5",
     "request": "^2.88.2",
-    "validator": "^13.1.1"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
